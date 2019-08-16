@@ -1,1 +1,26 @@
 // Navigation code here
+body nav {
+    .flex(column, nowrap, unset, center);
+
+    background-color: @wild-sand;
+    color: @river-bend;
+    border-bottom: 1px solid @sea-shell;
+    width: 100%;
+
+    .nav__intro,
+    .nav__links {
+        width: 30%;
+    }
+
+    .nav__intro {
+        text-align: center;
+        font-size: @x-large;
+        padding: 1rem 0;
+    }
+
+    .nav__links {
+        .flex(row, nowrap, space-around);
+        font-size: @med;
+        padding: 1rem;
+    }
+}
