@@ -199,11 +199,17 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+.home .intro article {
+  color: #23293B;
+}
+.home .intro article h2 {
   padding: 15px;
 }
-.home .intro p {
+.home .intro article p {
   padding: 0 15px;
+}
+.home .intro div.header__img img {
+  border-radius: 0.65rem;
 }
 .home .space-images {
   display: flex;
