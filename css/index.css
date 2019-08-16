@@ -175,10 +175,26 @@ body nav .nav__intro,
 body nav .nav__links {
   width: 30%;
 }
+@media (max-width: 500px) {
+  body nav .nav__intro,
+  body nav .nav__links {
+    width: 75%;
+  }
+}
 body nav .nav__intro {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: unset;
+  align-content: unset;
   text-align: center;
   font-size: 4.8rem;
   padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  body nav .nav__intro {
+    font-size: 3.8rem;
+  }
 }
 body nav .nav__links {
   display: flex;

@@ -10,12 +10,21 @@ body nav {
     .nav__intro,
     .nav__links {
         width: 30%;
+
+        @media @phone {
+            width: 75%;
+        }
     }
 
     .nav__intro {
+        .flex(row, nowrap, center);
         text-align: center;
         font-size: @x-large;
         padding: 1rem 0;
+
+        @media @phone {
+            font-size: @large;
+        }
     }
 
     .nav__links {
