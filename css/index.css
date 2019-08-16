@@ -231,6 +231,12 @@ footer {
   border-radius: 0.65rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images > img:nth-child(1),
+  .home .space-images > img:nth-child(2) {
+    display: none;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +247,13 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.3rem 0;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -258,8 +271,29 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: unset;
+    padding: 0;
+    width: 100%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: unset;
+    align-content: unset;
+    width: 90%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -276,6 +310,14 @@ footer {
   background-color: #22283A;
   color: #F6F7F8;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    margin-bottom: 1.8rem;
+    padding: 2.5rem;
+    font-size: 2rem;
+  }
+}
 .home .walk .walk-text .btn:hover {
   padding: 1rem;
   font-size: 1.8rem;
@@ -290,8 +332,26 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: unset;
+    align-content: unset;
+    width: 100%;
+    margin: 0;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.3rem 0;
+  }
 }
