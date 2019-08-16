@@ -224,8 +224,12 @@ footer {
 .home .intro article p {
   padding: 0 15px;
 }
+.home .intro div.header__img {
+  width: 100%;
+}
 .home .intro div.header__img img {
   border-radius: 0.65rem;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
