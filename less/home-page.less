@@ -1,6 +1,14 @@
+html {
+  position: relative;
+}
+
 // Home Content
 
 .home {
+
+  #btn-click {
+    display: none;
+  }
 
   .intro {
 
@@ -100,7 +108,6 @@
 
         @media @phone {
           width: 100%;
-          margin-bottom: @med;
           padding: 2.5rem;
           font-size: 2rem;
         }
@@ -138,3 +145,36 @@
 }
 
 // home
+
+// Overlay Styles
+.form {
+
+  @media @phone {
+    .flex();
+    margin-bottom: @med;
+    padding: 2.5rem;
+  }
+
+  width: 100%;
+  margin-bottom: 1.8rem;
+
+  input:checked + .overlay {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0;
+    max-width: 72rem;
+    min-height: 100vh;
+    content: '';
+    background-color: rgba(black, 0.5);
+    z-index: -1;
+  }
+}
